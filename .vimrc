@@ -4,7 +4,7 @@
     "Plug 'tyru/open-browser.vim'                "browser
     "Plug 'junegunn/goyo.vim'                   "简化阅读
     "Plug 'SirVer/ultisnips'                     "PYTHON补全
-    "Plug 'honza/vim-snippets'
+      "Plug 'honza/vim-snippets'
     "Plug 'davidhalter/jedi'                    "PYTHON     
                                                 "python不全/字典:    https://github.com/davidhalter/jedi
     "Plug 'pangloss/vim-javascript'             "java高亮
@@ -15,7 +15,7 @@
     "Plug 'ycm-core/YouCompleteMe'
     "Plug 'vim-syntastic/syntastic'             "语法检查
     "Plug 'suan/vim-instant-markdown'           "markdown
-    " Plug 'cormacrelf/vim-colors-github'         "为何用浅色背景:https://www.zhihu.com/question/20215618
+    "Plug 'cormacrelf/vim-colors-github'         "为何用浅色背景:https://www.zhihu.com/question/20215618
 "vim-plug>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 call plug#begin('~/.vim/plugged')
 "格式
@@ -40,6 +40,15 @@ call plug#begin('~/.vim/plugged')
     Plug 'lervag/vimtex'
     Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }         "online
     Plug '907th/vim-auto-save'                  "自动保存
+                                                "不全
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+          " if has('nvim')
+            " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+          " else
+            " Plug 'Shougo/deoplete.nvim'
+            " Plug 'roxma/nvim-yarp'
+            " Plug 'roxma/vim-hug-neovim-rpc'
+          " endif
 "new tag
     Plug 'junegunn/fzf.vim'
     Plug 'liuchengxu/vim-clap'
@@ -80,7 +89,7 @@ set t_Co=256
 "color
 " set background=dark
 " colo github
-colo light-delight
+colo whiteBlue
 " colo  iceberg
   let g:lightline = {'colorscheme': 'iceberg'}
 
@@ -440,6 +449,13 @@ let g:vim_markdown_auto_insert_bullets = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 "let g:ackprg = 'ag --vimgrep'  (相同作用)
 
+"=============================latex
+let g:vimtex_fold_manual=1
+let g:tex_flavor='latex'
+    "Starting with Vim 7, the filetype of empty .tex files defaults to
+    " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+    " The following changes the default filetype back to 'tex':
+let g:Tex_CustomTemplateDirectory="~/.config/nvim/gogo/laxModel/"
 "=============================latex_live
 let g:livepreview_previewer = 'zathura'
 let g:livepreview_cursorhold_recompile = 0
@@ -466,3 +482,8 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_conceallevel = 0
 let g:vimwiki_global_ext   = 0
+
+"==============================deoplete
+let g:deoplete#enable_at_startup = 1
+
+runtime ~/.config/nvim/gogo/finger/lightline.vim
