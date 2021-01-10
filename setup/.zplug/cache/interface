@@ -1,0 +1,5 @@
+plugins/alias-finder, from:oh-my-zsh
+plugins/autojump, from:oh-my-zsh
+plugins/safe-paste, from:oh-my-zsh
+plugins/vi-mode, from:oh-my-zsh
+zsh-users/zsh-autosuggestions

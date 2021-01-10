@@ -1,0 +1,5 @@
+repo:plugins/safe-paste	status:0
+repo:plugins/vi-mode	status:0
+repo:plugins/alias-finder	status:0
+repo:zsh-users/zsh-autosuggestions	status:0
+repo:plugins/autojump	status:0

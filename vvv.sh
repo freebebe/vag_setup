@@ -5,6 +5,6 @@ unzip v2ray-linux-64.zip
 sudo cp -r ./* /opt/vvv
 cd ~/ && rm -rf ~/vvv
 
-sudo echo ./vvv >> /opt/vvv/config.json
+sudo echo ~/git/vag_setup/vvv >> /opt/vvv/config.json
 
 
