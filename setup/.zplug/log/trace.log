@@ -400,3 +400,5 @@
 {"pid":70608,"shlvl":2,"level":"INFO","dir":"/home/goy0","message":"turn monitor on","trace":["__zplug::log::write::info:2","__zplug::job::polling::periodic:9","/usr/bin/zsh:1"],"date":"2021-01-12T13:49:26+1100"}
 {"pid":70839,"shlvl":1,"level":"INFO","dir":"/home/goy0","message":"ZPLUG_LOADFILE is not found","trace":["__zplug::log::write::info:2","__zplug::io::file::load:3","/home/goy0/.zplug/init.zsh:33","/home/goy0/.zshrc:6","zsh:0"],"date":"2021-01-12T13:49:47+1100"}
 {"pid":70839,"shlvl":1,"level":"INFO","dir":"/home/goy0","message":"turn monitor on","trace":["__zplug::log::write::info:2","__zplug::job::polling::periodic:9","zsh:1"],"date":"2021-01-12T13:49:47+1100"}
+{"pid":71597,"shlvl":1,"level":"INFO","dir":"/home/goy0","message":"ZPLUG_LOADFILE is not found","trace":["__zplug::log::write::info:2","__zplug::io::file::load:3","/home/goy0/.zplug/init.zsh:33","/home/goy0/.zshrc:6","zsh:0"],"date":"2021-01-12T13:50:59+1100"}
+{"pid":71597,"shlvl":1,"level":"INFO","dir":"/home/goy0","message":"turn monitor on","trace":["__zplug::log::write::info:2","__zplug::job::polling::periodic:9","zsh:1"],"date":"2021-01-12T13:50:59+1100"}
