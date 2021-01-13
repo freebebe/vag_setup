@@ -251,6 +251,7 @@ _comps=(
 'cygserver.exe' '_cygserver'
 'cygstart' '_cygstart'
 'cygstart.exe' '_cygstart'
+'d' '_docker'
 'dak' '_dak'
 'darcs' '_darcs'
 'dash' '_sh'
@@ -447,6 +448,7 @@ _comps=(
 'fusermount' '_fusermount'
 'fwhois' '_whois'
 'fw_update' '_fw_update'
+'g' '_git'
 'g++' '_gcc'
 'galeon' '_webbrowser'
 'gawk' '_awk'
@@ -1740,7 +1742,9 @@ _comps=(
 
 _services=(
 'bzcat' 'bunzip2'
+'d' 'docker'
 'dch' 'debchange'
+'g' 'git'
 'gchgrp' 'chgrp'
 'gchown' 'chown'
 'gnupod_addsong.pl' 'gnupod_addsong'
