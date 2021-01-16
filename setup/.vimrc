@@ -44,6 +44,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'                   "git
       Plug 'tpope/vim-rhubarb'                  "if fugitive is git, rhubarb is hub
     Plug 'Vimjas/vim-python-pep8-indent'        "自动/定义缩进
+    Plug 'easymotion/vim-easymotion'            "'/'标签字母快速跳转
 "螺丝
     Plug 'tpope/vim-eunuch'                     "filemanger ->  /:move//:mkdir//:rename//:delete//
     Plug 'jreybert/vimagit'
