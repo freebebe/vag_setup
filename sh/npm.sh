@@ -15,4 +15,5 @@ proxychains npm install bootstrap@next -g
 proxychains npm install @popperjs/core -g
 proxychains npm install portal-vue -g
 proxychains npm install vue bootstrap npm i portal-vuebootstrap-vue -g
+proxychains npm install npm i eslint eslint-plugin-vue -g
 
