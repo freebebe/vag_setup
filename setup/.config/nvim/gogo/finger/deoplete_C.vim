@@ -1,4 +1,5 @@
-" plugin configuration {{{
+"_______________________________________________________________________________
+"                                                       plugin configuration {{{
 
 let g:deoplete#enable_at_startup=1
 let g:deoplete#custom#option=({
@@ -7,7 +8,7 @@ let g:deoplete#custom#option=({
   \ 'smart_case': v:true,
   \ })
 
-" Disable deoplete on vim-multiple-cursors
+" ----------------------- Disable deoplete on vim-multiple-cursors
 func! Multiple_cursors_before()
   if deoplete#is_enabled()
     call deoplete#disable()
@@ -22,24 +23,25 @@ func! Multiple_cursors_after()
   endif
 endfunc
 
-" if !exists('g:deoplete#omni#input_patterns')
-"   let g:deoplete#omni#input_patterns = {}
-" endif
+if !exists('g:deoplete#omni#input_patterns')
+  let g:deoplete#omni#input_patterns = {}
+endif
 
-" if !exists('g:deoplete#ignore_sources')
-"   let g:deoplete#ignore_sources = {}
-" endif
-" let g:deoplete#ignore_sources['html'] = ['omni']
+if !exists('g:deoplete#ignore_sources')
+  let g:deoplete#ignore_sources = {}
+endif
+let g:deoplete#ignore_sources['html'] = ['omni']
 
 " }}}
+"_______________________________________________________________________________
 
-if utils#hasPlugin('context_filetype') "{{{
-  if !exists('g:context_filetype#same_filetypes')
-    let g:context_filetype#same_filetypes = {}
-  endif
-  " In cpp buffers, completes from c buffers.
-  let g:context_filetype#same_filetypes.cpp = 'c'
-endif
+" if utils#hasPlugin('context_filetype') "{{{
+"   if !exists('g:context_filetype#same_filetypes')
+"     let g:context_filetype#same_filetypes = {}
+"   endif
+"   " In cpp buffers, completes from c buffers.
+"   let g:context_filetype#same_filetypes.cpp = 'c'
+" endif
 " }}}
 
 " if utils#hasPlugin('deoplete-clang') "{{{
@@ -74,12 +76,13 @@ endif
 " endif
 "}}}
 
-if utils#hasPlugin('deoplete-ternjs') "{{{
-  function! StrTrim(txt)
-    return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
-  endfunction
+" if utils#hasPlugin('deoplete-ternjs') "{{{
+"   function! StrTrim(txt)
+"     return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+"   endfunction
 
-  " javascript
+"_______________________________________________________________________________
+"                                                                   javascript{{{
   let g:deoplete#sources#javascript = ['file', 'ternjs', 'ultisnips']
   let g:deoplete#sources#jsx = ['file', 'ternjs', 'ultisnips']
 
