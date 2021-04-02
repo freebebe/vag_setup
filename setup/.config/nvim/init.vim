@@ -36,7 +36,7 @@ source $HOME/.config/nvim/gogo/brain/fzf.vim
 " source $HOME/.config/nvim/gogo/brain/neomake.vim
 " source $HOME/.config/nvim/gogo/brain/ale.vim
 
-source $HOME/.config/nvim/gogo/hands/lightline.vim
+source $HOME/.config/nvim/gogo/hands/lightLine2.vim
 source $HOME/.config/nvim/gogo/hands/openbrowser_rc.vim
 
 
@@ -50,8 +50,8 @@ source $HOME/.config/nvim/gogo/hands/openbrowser_rc.vim
   " let g:lightline = {'colorscheme': 'iceberg'}
 " colo whiteBlue      "local color 
 " colo dicul
-colo approid
-" colo codedark
+" " colo approid
+colo codedark
 
 ">>>>>>
 "color    for outside
