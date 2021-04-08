@@ -1,8 +1,8 @@
 "______________________________________________________________________________
 "                                                                       LINK{{{
 "
-" source $HOME/.config/nvim/gogo/brain/eyes/polyglot.vim
-luafile $HOME/.config/nvim/lua/plug/polyglot.lua
+source $HOME/.config/nvim/gogo/brain/eyes/polyglot.vim
+" luafile $HOME/.config/nvim/lua/plug/polyglot.lua
 "
 source $HOME/.config/nvim/function/plug.vim
 source $HOME/.config/nvim/function/rule.vim
@@ -32,6 +32,7 @@ source $HOME/.config/nvim/gogo/finger/defx.vim
 " source $HOME/.config/nvim/gogo/finger/fix_deoplete_in_cursors.vim
 
 " luafile $HOME/.config/nvim/lua/plug/fzf.lua
+luafile $HOME/.config/nvim/gogo/brain/clorizer.lua
 source $HOME/.config/nvim/gogo/brain/fzf.vim
 " source $HOME/.config/nvim/gogo/brain/neomake.vim
 " source $HOME/.config/nvim/gogo/brain/ale.vim
@@ -48,10 +49,10 @@ source $HOME/.config/nvim/gogo/hands/openbrowser_rc.vim
 ">>>>>>
 " set background=dark
   " let g:lightline = {'colorscheme': 'iceberg'}
-" colo whiteBlue      "local color 
+colo whiteBlue      "local color 
 " colo dicul
 " " colo approid
-colo codedark
+" colo codedark
 
 ">>>>>>
 "color    for outside
